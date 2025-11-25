@@ -15,7 +15,6 @@ struct FrameworkGridView: View {
     ]
     var body: some View {
         ZStack {
-            backgroundView()
             LazyVGrid(columns: colums){
                 ForEach(MockData.frameworks){
                     framework in
@@ -27,12 +26,7 @@ struct FrameworkGridView: View {
     }
 }
 
-struct backgroundView: View {
-    var body: some View {
-        Color(.darkGray)
-            .ignoresSafeArea()
-    }
-}
+
 
 struct CategoryItemView: View {
     var framework: Framework
@@ -47,7 +41,6 @@ struct CategoryItemView: View {
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
-                .foregroundStyle(.white)
 
         }
     }
@@ -55,4 +48,5 @@ struct CategoryItemView: View {
 
 #Preview {
     FrameworkGridView()
+        .preferredColorScheme(.dark)
 }
