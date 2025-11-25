@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    let colums: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
     var body: some View {
         ZStack {
             backgroundView()
-            VStack {
-                Text("Apple FrameWorks")
-                    .font(.system(size: 20, weight: .bold))
-                    .foregroundStyle(.white)
-                VStack {
-                    CategoryItemView(framework: MockData.sampleFramework)
+            LazyVGrid(columns: colums){
+                ForEach(MockData.frameworks){
+                    framework in
+                    CategoryItemView(framework: framework)
                 }
-                Spacer()
             }
-
         }
 
     }
@@ -36,17 +37,19 @@ struct backgroundView: View {
 struct CategoryItemView: View {
     var framework: Framework
     var body: some View {
-        Image(framework.imageName)
-            .resizable()
-            .frame(width: 100, height: 100)
-            .aspectRatio(contentMode: .fit)
-        Text(framework.name)
-            .font(.title2)
-            .fontWeight(.semibold)
-            .scaledToFit()
-            .minimumScaleFactor(0.6)
-            .foregroundStyle(.white)
+        VStack {
+            Image(framework.imageName)
+                .resizable()
+                .frame(width: 100, height: 100)
+                .aspectRatio(contentMode: .fit)
+            Text(framework.name)
+                .font(.title2)
+                .fontWeight(.semibold)
+                .scaledToFit()
+                .minimumScaleFactor(0.6)
+                .foregroundStyle(.white)
 
+        }
     }
 }
 
