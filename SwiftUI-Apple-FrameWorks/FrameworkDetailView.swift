@@ -25,7 +25,6 @@ struct FrameworkDetailView: View {
             }.padding()
             
 
-            Spacer()
             FrameWorkItemView(framework: framework)
             Text(framework.description)
                 .font(.body)
