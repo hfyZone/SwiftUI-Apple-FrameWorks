@@ -14,21 +14,27 @@ struct FrameworkGridView: View {
         GridItem(.flexible()),
     ]
     var body: some View {
-        ZStack {
-            LazyVGrid(columns: colums){
-                ForEach(MockData.frameworks){
-                    framework in
-                    CategoryItemView(framework: framework)
+        NavigationView{
+            ScrollView {
+                ZStack {
+                    LazyVGrid(columns: colums){
+                        ForEach(MockData.frameworks){
+                            framework in
+                            FrameWorkItemView(framework: framework)
+                        }
+                    }
                 }
             }
+            .navigationTitle("Apple Frameworks 🍎")
         }
+        
 
     }
 }
 
 
 
-struct CategoryItemView: View {
+struct FrameWorkItemView: View {
     var framework: Framework
     var body: some View {
         VStack {
@@ -41,8 +47,8 @@ struct CategoryItemView: View {
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
-
         }
+        .padding()
     }
 }
 
