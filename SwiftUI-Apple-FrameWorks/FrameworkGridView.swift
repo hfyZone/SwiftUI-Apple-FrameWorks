@@ -14,17 +14,18 @@ struct FrameworkGridView: View {
         GridItem(.flexible()),
         GridItem(.flexible()),
     ]
-    
+
     var body: some View {
-        NavigationView{
+        NavigationView {
             ScrollView {
                 ZStack {
-                    LazyVGrid(columns: colums){
-                        ForEach(MockData.frameworks){
+                    LazyVGrid(columns: colums) {
+                        ForEach(MockData.frameworks) {
                             framework in
                             FrameWorkItemView(framework: framework)
                                 .onTapGesture {
                                     viewModel.selectedFramework = framework
+                                    viewModel.isShowingDetailView = true
                                 }
                         }
                     }
@@ -32,15 +33,12 @@ struct FrameworkGridView: View {
             }
             .navigationTitle("Apple Frameworks 🍎")
             .sheet(isPresented: $viewModel.isShowingDetailView) {
-                FrameworkDetailView(framework: viewModel.selectedFramework!)
+                FrameworkDetailView(framework: viewModel.selectedFramework!, isShowingDetailView: $viewModel.isShowingDetailView)
             }
         }
-        
 
     }
 }
-
-
 
 struct FrameWorkItemView: View {
     var framework: Framework

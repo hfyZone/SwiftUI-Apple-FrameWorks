@@ -5,16 +5,16 @@
 //  Created by 韩飞洋 on 2025/11/26.
 //
 
-import SwiftUI
 internal import Combine
+import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject {
-    var selectedFramework: Framework?{
-        didSet {
-            isShowingDetailView = true
-        }
-    }
+    var selectedFramework: Framework?
+//    {
+//        didSet {
+//            isShowingDetailView = true
+//        }
+//    }
     @Published var isShowingDetailView = false
-    
+
 }
- 
