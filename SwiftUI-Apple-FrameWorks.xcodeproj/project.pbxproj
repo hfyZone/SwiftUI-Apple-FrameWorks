@@ -109,9 +109,9 @@
 		2A98B83C2ED8962D0062E9E6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2A98B83E2ED89A340062E9E6 /* UIKit */,
 				2A98B82C2ED892AE0062E9E6 /* XDismissButton.swift */,
 				2A98B8292ED892AE0062E9E6 /* FrameWorkItemView.swift */,
-				2A98B82A2ED892AE0062E9E6 /* SafariView.swift */,
 				2A98B8232ED892AE0062E9E6 /* AFButton.swift */,
 			);
 			path = Components;
@@ -123,6 +123,14 @@
 				2A98B8252ED892AE0062E9E6 /* Framework.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2A98B83E2ED89A340062E9E6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B82A2ED892AE0062E9E6 /* SafariView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
