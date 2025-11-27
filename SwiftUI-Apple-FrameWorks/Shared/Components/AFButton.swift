@@ -13,3 +13,6 @@ struct AFButton: View {
             .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
     }
 }
+#Preview {
+    AFButton(title: "TEST")
+}

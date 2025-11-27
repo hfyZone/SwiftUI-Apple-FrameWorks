@@ -6,17 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A98B82E2ED892AE0062E9E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A98B8242ED892AE0062E9E6 /* Assets.xcassets */; };
+		2A98B82F2ED892AE0062E9E6 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8232ED892AE0062E9E6 /* AFButton.swift */; };
+		2A98B8302ED892AE0062E9E6 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8252ED892AE0062E9E6 /* Framework.swift */; };
+		2A98B8312ED892AE0062E9E6 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8262ED892AE0062E9E6 /* FrameworkDetailView.swift */; };
+		2A98B8322ED892AE0062E9E6 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8272ED892AE0062E9E6 /* FrameworkGridView.swift */; };
+		2A98B8332ED892AE0062E9E6 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8282ED892AE0062E9E6 /* FrameworkGridViewModel.swift */; };
+		2A98B8342ED892AE0062E9E6 /* FrameWorkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8292ED892AE0062E9E6 /* FrameWorkItemView.swift */; };
+		2A98B8352ED892AE0062E9E6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B82A2ED892AE0062E9E6 /* SafariView.swift */; };
+		2A98B8362ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B82B2ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift */; };
+		2A98B8372ED892AE0062E9E6 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B82C2ED892AE0062E9E6 /* XDismissButton.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2A98B7FE2ED578480062E9E6 /* SwiftUI-Apple-FrameWorks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Apple-FrameWorks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A98B8232ED892AE0062E9E6 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		2A98B8242ED892AE0062E9E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A98B8252ED892AE0062E9E6 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		2A98B8262ED892AE0062E9E6 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		2A98B8272ED892AE0062E9E6 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		2A98B8282ED892AE0062E9E6 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		2A98B8292ED892AE0062E9E6 /* FrameWorkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkItemView.swift; sourceTree = "<group>"; };
+		2A98B82A2ED892AE0062E9E6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		2A98B82B2ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Apple_FrameWorksApp.swift; sourceTree = "<group>"; };
+		2A98B82C2ED892AE0062E9E6 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		2A98B8002ED578480062E9E6 /* SwiftUI-Apple-FrameWorks */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SwiftUI-Apple-FrameWorks";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A98B7FB2ED578480062E9E6 /* Frameworks */ = {
@@ -32,7 +47,7 @@
 		2A98B7F52ED578480062E9E6 = {
 			isa = PBXGroup;
 			children = (
-				2A98B8002ED578480062E9E6 /* SwiftUI-Apple-FrameWorks */,
+				2A98B82D2ED892AE0062E9E6 /* SwiftUI-Apple-FrameWorks */,
 				2A98B7FF2ED578480062E9E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,71 @@
 				2A98B7FE2ED578480062E9E6 /* SwiftUI-Apple-FrameWorks.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2A98B82D2ED892AE0062E9E6 /* SwiftUI-Apple-FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B83B2ED8958E0062E9E6 /* Shared */,
+				2A98B8382ED892B80062E9E6 /* Features */,
+				2A98B82B2ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift */,
+				2A98B8242ED892AE0062E9E6 /* Assets.xcassets */,
+			);
+			path = "SwiftUI-Apple-FrameWorks";
+			sourceTree = "<group>";
+		};
+		2A98B8382ED892B80062E9E6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B83A2ED8953D0062E9E6 /* Detail */,
+				2A98B8392ED8952D0062E9E6 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2A98B8392ED8952D0062E9E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B8272ED892AE0062E9E6 /* FrameworkGridView.swift */,
+				2A98B8282ED892AE0062E9E6 /* FrameworkGridViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A98B83A2ED8953D0062E9E6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B8262ED892AE0062E9E6 /* FrameworkDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2A98B83B2ED8958E0062E9E6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B83D2ED897550062E9E6 /* Models */,
+				2A98B83C2ED8962D0062E9E6 /* Components */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2A98B83C2ED8962D0062E9E6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B82C2ED892AE0062E9E6 /* XDismissButton.swift */,
+				2A98B8292ED892AE0062E9E6 /* FrameWorkItemView.swift */,
+				2A98B82A2ED892AE0062E9E6 /* SafariView.swift */,
+				2A98B8232ED892AE0062E9E6 /* AFButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2A98B83D2ED897550062E9E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A98B8252ED892AE0062E9E6 /* Framework.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +139,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				2A98B8002ED578480062E9E6 /* SwiftUI-Apple-FrameWorks */,
 			);
 			name = "SwiftUI-Apple-FrameWorks";
 			packageProductDependencies = (
@@ -109,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A98B82E2ED892AE0062E9E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A98B82F2ED892AE0062E9E6 /* AFButton.swift in Sources */,
+				2A98B8302ED892AE0062E9E6 /* Framework.swift in Sources */,
+				2A98B8312ED892AE0062E9E6 /* FrameworkDetailView.swift in Sources */,
+				2A98B8322ED892AE0062E9E6 /* FrameworkGridView.swift in Sources */,
+				2A98B8332ED892AE0062E9E6 /* FrameworkGridViewModel.swift in Sources */,
+				2A98B8342ED892AE0062E9E6 /* FrameWorkItemView.swift in Sources */,
+				2A98B8352ED892AE0062E9E6 /* SafariView.swift in Sources */,
+				2A98B8362ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift in Sources */,
+				2A98B8372ED892AE0062E9E6 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

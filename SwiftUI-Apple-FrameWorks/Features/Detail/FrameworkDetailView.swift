@@ -13,20 +13,7 @@ struct FrameworkDetailView: View {
     @State private var isShowingSafariView: Bool = false
     var body: some View {
         VStack {
-            HStack {
-                // 左对齐右对齐的方案
-                Spacer()
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundStyle(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 30, height: 30)
-                }
-            }.padding()
-            
-
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
             FrameWorkItemView(framework: framework)
             Text(framework.description)
                 .font(.body)

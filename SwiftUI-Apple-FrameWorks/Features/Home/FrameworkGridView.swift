@@ -9,17 +9,12 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     @StateObject var viewModel = FrameworkGridViewModel()
-    let colums: [GridItem] = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-    ]
-
+    // View应该只关心页面展示
     var body: some View {
         NavigationView {
             ScrollView {
                 ZStack {
-                    LazyVGrid(columns: colums) {
+                    LazyVGrid(columns: viewModel.colums) {
                         ForEach(MockData.frameworks) {
                             framework in
                             FrameWorkItemView(framework: framework)
@@ -40,23 +35,7 @@ struct FrameworkGridView: View {
     }
 }
 
-struct FrameWorkItemView: View {
-    var framework: Framework
-    var body: some View {
-        VStack {
-            Image(framework.imageName)
-                .resizable()
-                .frame(width: 100, height: 100)
-                .aspectRatio(contentMode: .fit)
-            Text(framework.name)
-                .font(.title2)
-                .fontWeight(.semibold)
-                .scaledToFit()
-                .minimumScaleFactor(0.6)
-        }
-        .padding()
-    }
-}
+
 
 #Preview {
     FrameworkGridView()
