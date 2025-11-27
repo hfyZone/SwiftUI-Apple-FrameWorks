@@ -13,7 +13,6 @@ struct FrameworkDetailView: View {
     @State private var isShowingSafariView: Bool = false
     var body: some View {
         VStack {
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
             FrameWorkItemView(framework: framework)
             Text(framework.description)
                 .font(.body)
@@ -22,8 +21,13 @@ struct FrameworkDetailView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-                AFButton(title: "Learn More")
+                // 使用apple的默认
+                Label("Learn More", systemImage: "book.fill")
             }
+            .buttonStyle(.glassProminent)
+            .controlSize(.extraLarge)
+            .buttonBorderShape(.automatic)
+            .tint(.red)
         }.fullScreenCover(isPresented: $isShowingSafariView) {
             SafariView(url: URL(string: framework.urlString)!)
         }

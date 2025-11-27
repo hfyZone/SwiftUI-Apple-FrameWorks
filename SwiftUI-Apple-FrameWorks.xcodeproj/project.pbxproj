@@ -11,8 +11,8 @@
 		2A98B82F2ED892AE0062E9E6 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8232ED892AE0062E9E6 /* AFButton.swift */; };
 		2A98B8302ED892AE0062E9E6 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8252ED892AE0062E9E6 /* Framework.swift */; };
 		2A98B8312ED892AE0062E9E6 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8262ED892AE0062E9E6 /* FrameworkDetailView.swift */; };
-		2A98B8322ED892AE0062E9E6 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8272ED892AE0062E9E6 /* FrameworkGridView.swift */; };
-		2A98B8332ED892AE0062E9E6 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8282ED892AE0062E9E6 /* FrameworkGridViewModel.swift */; };
+		2A98B8322ED892AE0062E9E6 /* FrameworkMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8272ED892AE0062E9E6 /* FrameworkMainView.swift */; };
+		2A98B8332ED892AE0062E9E6 /* FrameworkMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8282ED892AE0062E9E6 /* FrameworkMainViewModel.swift */; };
 		2A98B8342ED892AE0062E9E6 /* FrameWorkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B8292ED892AE0062E9E6 /* FrameWorkItemView.swift */; };
 		2A98B8352ED892AE0062E9E6 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B82A2ED892AE0062E9E6 /* SafariView.swift */; };
 		2A98B8362ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98B82B2ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift */; };
@@ -25,8 +25,8 @@
 		2A98B8242ED892AE0062E9E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A98B8252ED892AE0062E9E6 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		2A98B8262ED892AE0062E9E6 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
-		2A98B8272ED892AE0062E9E6 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
-		2A98B8282ED892AE0062E9E6 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		2A98B8272ED892AE0062E9E6 /* FrameworkMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkMainView.swift; sourceTree = "<group>"; };
+		2A98B8282ED892AE0062E9E6 /* FrameworkMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkMainViewModel.swift; sourceTree = "<group>"; };
 		2A98B8292ED892AE0062E9E6 /* FrameWorkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkItemView.swift; sourceTree = "<group>"; };
 		2A98B82A2ED892AE0062E9E6 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		2A98B82B2ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Apple_FrameWorksApp.swift; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		2A98B8392ED8952D0062E9E6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2A98B8272ED892AE0062E9E6 /* FrameworkGridView.swift */,
-				2A98B8282ED892AE0062E9E6 /* FrameworkGridViewModel.swift */,
+				2A98B8272ED892AE0062E9E6 /* FrameworkMainView.swift */,
+				2A98B8282ED892AE0062E9E6 /* FrameworkMainViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -208,8 +208,8 @@
 				2A98B82F2ED892AE0062E9E6 /* AFButton.swift in Sources */,
 				2A98B8302ED892AE0062E9E6 /* Framework.swift in Sources */,
 				2A98B8312ED892AE0062E9E6 /* FrameworkDetailView.swift in Sources */,
-				2A98B8322ED892AE0062E9E6 /* FrameworkGridView.swift in Sources */,
-				2A98B8332ED892AE0062E9E6 /* FrameworkGridViewModel.swift in Sources */,
+				2A98B8322ED892AE0062E9E6 /* FrameworkMainView.swift in Sources */,
+				2A98B8332ED892AE0062E9E6 /* FrameworkMainViewModel.swift in Sources */,
 				2A98B8342ED892AE0062E9E6 /* FrameWorkItemView.swift in Sources */,
 				2A98B8352ED892AE0062E9E6 /* SafariView.swift in Sources */,
 				2A98B8362ED892AE0062E9E6 /* SwiftUI_Apple_FrameWorksApp.swift in Sources */,

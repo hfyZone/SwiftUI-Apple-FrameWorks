@@ -3,10 +3,10 @@ import SwiftUI
 struct FrameWorkItemView: View {
     var framework: Framework
     var body: some View {
-        VStack {
+        HStack {
             Image(framework.imageName)
                 .resizable()
-                .frame(width: 100, height: 100)
+                .frame(width: 70, height: 70)
                 .aspectRatio(contentMode: .fit)
             Text(framework.name)
                 .font(.title2)
@@ -14,7 +14,6 @@ struct FrameWorkItemView: View {
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
         }
-        .padding()
     }
 }
 
