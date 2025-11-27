@@ -9,11 +9,9 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     let framework: Framework
-    @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView: Bool = false
     var body: some View {
         VStack {
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
             FrameWorkItemView(framework: framework)
             Text(framework.description)
                 .font(.body)
@@ -24,12 +22,13 @@ struct FrameworkDetailView: View {
             } label: {
                 AFButton(title: "Learn More")
             }
-        }.fullScreenCover(isPresented: $isShowingSafariView) {
+        }
+        .fullScreenCover(isPresented: $isShowingSafariView) {
             SafariView(url: URL(string: framework.urlString)!)
         }
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(true)).preferredColorScheme(.dark)
+    FrameworkDetailView(framework: MockData.sampleFramework)
 }

@@ -11,24 +11,20 @@ struct FrameworkGridView: View {
     @StateObject var viewModel = FrameworkGridViewModel()
     // View应该只关心页面展示
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
-                ZStack {
-                    LazyVGrid(columns: viewModel.colums) {
-                        ForEach(MockData.frameworks) {
-                            framework in
+                LazyVGrid(columns: viewModel.colums) {
+                    ForEach(MockData.frameworks) {
+                        framework in
+                        NavigationLink(value: framework) {
                             FrameWorkItemView(framework: framework)
-                                .onTapGesture {
-                                    viewModel.selectedFramework = framework
-                                    viewModel.isShowingDetailView = true
-                                }
                         }
                     }
                 }
             }
             .navigationTitle("Apple Frameworks 🍎")
-            .sheet(isPresented: $viewModel.isShowingDetailView) {
-                FrameworkDetailView(framework: viewModel.selectedFramework!, isShowingDetailView: $viewModel.isShowingDetailView)
+            .navigationDestination(for: Framework.self) { framework in
+                FrameworkDetailView(framework: framework)
             }
         }
 
